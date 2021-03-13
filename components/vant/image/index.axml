@@ -1,0 +1,22 @@
+<view class='image-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from='./index.sjs' name='computed'>
+  </import-sjs>
+  <import-sjs from='../wxs/utils.sjs' name='utils'>
+  </import-sjs>
+  <view style='{{ computed.rootStyle({ width, height, radius }) }}' class="{{customClass}} {{ utils.bem('image', { round })}}" onTap='antmoveAction' data-antmove-tap='onClick'>
+    <image a:if='{{ !error }}' src='{{ src }}' mode='{{ computed.mode(fit) }}' lazy-load='{{ lazyLoad }}' class='{{imageClass}} van-image__img' onLoad='onLoad' onError='onError'>
+    </image>
+    <view a:if='{{ loading && showLoading }}' class='{{loadingClass}} van-image__loading'>
+      <slot a:if='{{ useLoadingSlot }}' name='loading'>
+      </slot>
+      <van-icon a:else  name='photo' custom-class='van-image__loading-icon' ref='saveChildRef1'>
+      </van-icon>
+    </view>
+    <view a:if='{{ error && showError }}' class='{{errorClass}} van-image__error'>
+      <slot a:if='{{ useErrorSlot }}' name='error'>
+      </slot>
+      <van-icon a:else  name='photo-fail' custom-class='van-image__error-icon' ref='saveChildRef2'>
+      </van-icon>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class='picker-column-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from='./index.sjs' name='computed'>
+  </import-sjs>
+  <import-sjs from='../wxs/utils.sjs' name='utils'>
+  </import-sjs>
+  <view class='van-picker-column {{customClass}}' style='{{ computed.rootStyle({ itemHeight, visibleItemCount }) }}' catchTouchStart='antmoveAction' data-antmove-touchstart='onTouchStart' catchTouchMove='antmoveAction' data-antmove-touchmove='onTouchMove' catchTouchEnd='antmoveAction' data-antmove-touchend='onTouchEnd' catchTouchCancel='antmoveAction' data-antmove-touchcancel='onTouchEnd'>
+    <view style='{{ computed.wrapperStyle({ offset, itemHeight, visibleItemCount }) }}'>
+      <view a:for='{{ options }}' a:for-item='option' a:key='{{index}}' data-index='{{ index }}' style='height: {{ itemHeight }}px' class="van-ellipsis {{ utils.bem('picker-column__item', { disabled: option && option.disabled, selected: index === currentIndex }) }} {{ index === currentIndex ? 'active-class' : '' }}" ref-numbers='{{ options }}' onTap='antmoveAction' data-antmove-tap='onClickItem'>
+        {{ computed.optionText(option, valueKey) }}
+      </view>
+    </view>
+  </view>
+</view>
