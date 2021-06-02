@@ -1,0 +1,23 @@
+<view class='button-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from='./index.sjs' name='computed'>
+  </import-sjs>
+  <import-sjs from='../wxs/utils.sjs' name='utils'>
+  </import-sjs>
+  <btn id='{{ id }}' data-detail='{{ dataset }}' class="{{customClass}} {{ utils.bem('button', [type, size, { block, round, plain, square, loading, disabled, hairline, unclickable: disabled || loading }]) }} {{ hairline ? 'van-hairline--surround' : '' }}" hover-class='van-button--active {{hoverClass}}' form-type='{{ formType }}' style='{{ computed.rootStyle({ plain, color }) }} {{ customStyle }}' open-type="{{ disabled ? '' : openType }}" business-id='{{ businessId }}' app-parameter='{{ appParameter }}' aria-label='{{ ariaLabel }}' onGetUserInfo='bindGetUserInfo' onGetPhoneNumber='bindGetPhoneNumber' onOpenSetting='bindOpenSetting' onTap='antmoveAction' data-antmove-tap="{{ !disabled ? 'onClick' : 'noop' }}">
+    <block a:if='{{ loading }}'>
+      <van-loading custom-class='{{loadingClass}}' size='{{ loadingSize }}' type='{{ loadingType }}' color='{{ computed.loadingColor({ type, color, plain }) }}' ref='saveChildRef1'>
+      </van-loading>
+      <view a:if='{{ loadingText }}' class='van-button__loading-text'>
+        {{ loadingText }}
+      </view>
+    </block>
+    <block a:else >
+      <van-icon a:if='{{ icon }}' size='1.2em' name='{{ icon }}' class-prefix='{{ classPrefix }}' class='van-button__icon' custom-style='line-height: inherit;' ref='saveChildRef2'>
+      </van-icon>
+      <view class='van-button__text'>
+        <slot>
+        </slot>
+      </view>
+    </block>
+  </btn>
+</view>

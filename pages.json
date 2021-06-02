@@ -1,0 +1,732 @@
+{
+	"tabBar": {
+		"custom": true,
+		"color": "#7a7a7a",
+		"borderStyle": "black",
+		"selectedColor": "#5CB8E7",
+		"list": [{
+				"pagePath": "pages/service/service",
+				"text": "智慧停车",
+				"iconPath": "static/image/tabber/ting.png",
+				"selectedIconPath": "static/image/tabber/ting1.png"
+			}, {
+				"pagePath": "pages/proper/proper",
+				"text": "小区服务",
+				"iconPath": "static/image/tabber/serices.png",
+				"selectedIconPath": "static/image/tabber/serices1.png"
+			}, {
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/image/tabber/home.png",
+				"selectedIconPath": "static/image/tabber/home1.png"
+			}, {
+				"pagePath": "pages/index/index",
+				"text": "共享车位",
+				"iconPath": "static/image/tabber/gong.png",
+				"selectedIconPath": "static/image/tabber/gong1.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "static/image/tabber/my.png",
+				"selectedIconPath": "static/image/tabber/my1.png"
+			}
+		]
+	},
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"transparentTitle": "always",
+					"titlePenetrate": "YES"
+				}
+			}
+		}, 
+		{
+			"path": "pages/user/businessCoupons",
+			"style": {
+				"navigationBarTitleText": "商家优惠券",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"transparentTitle": "always",
+					"titlePenetrate": "YES"
+				}
+			}
+		}, /*{
+			"path": "pages/service/no-feel",
+			"style": {
+				"navigationBarTitleText": "无感支付",
+				"navigationBarBackgroundColor": "#1B2635",
+				"navigationBarTextStyle": "white"
+			}
+		},*/ {
+			"path": "pages/service/arrearage",
+			"style": {
+				"navigationBarTitleText": "欠费记录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/service/service",
+			"style": {
+				"backgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "智慧停车",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+				//, "usingComponents": {
+				// 	"van-grid": "/wxcomponents/vant/grid/index",
+				// 	"van-grid-item": "/wxcomponents/vant/grid-item/index"
+				// }
+			}
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"transparentTitle": "always",
+					"titlePenetrate": "YES"
+				}
+			}
+		}, {
+			"path": "pages/service/maps",
+			"style": {
+				"navigationBarTitleText": "共享充电桩",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/service/payDetail",
+			"style": {
+				"navigationBarTitleText": "缴费信息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/index/tem-app/tem-app",
+			"style": {
+				"navigationBarTitleText": "进场",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/proper/proper",
+			"style": {
+				"backgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "小区服务",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+				// ,
+				// "usingComponents": {
+				// 	"van-dialog": "/wxcomponents/vant/dialog/index",
+				// 	"van-notice-bar": "/wxcomponents/vant/notice-bar/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/inspection",
+			"style": {
+				"backgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "巡检系统",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+				// ,
+				// "usingComponents": {
+				// 	"van-picker": "/wxcomponents/vant/picker/index",
+				// 	"van-empty": "/wxcomponents/vant/empty/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/photograph",
+			"style": {
+				"backgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "巡检系统",
+				"navigationBarBackgroundColor": "#F4F3F7",
+				"navigationBarTextStyle": "black"
+				// ,
+				// "usingComponents": {
+				// 	"van-popup": "/wxcomponents/vant/popup/index"
+				// }
+			}
+		},
+		{
+			"path": "pages/proper/camera/camera",
+			"style": {
+				"navigationBarTitleText": "拍照",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/service/substitute",
+			"style": {
+				"navigationBarTitleText": "代人缴费"
+				// ,
+				// "usingComponents": {
+				// 	"van-field": "/wxcomponents/vant/field/index"
+				// }
+			}
+		},
+		{
+			"path": "pages/proper/camera/camera2",
+			"style": {}
+		},
+		{
+			"path": "pages/proper/camera/preview",
+			"style": {
+				"navigationBarTitleText": "预览图片",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/proper/carWashBooking",
+			"style": {
+				"navigationBarTitleText": "洗车预约",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/proper/feedback",
+			"style": {
+				"navigationBarTitleText": "建议和反馈"
+				// ,
+				// "usingComponents": {
+				// 	"van-dialog": "/wxcomponents/vant/dialog/index"
+				// }
+			}
+		},
+		{
+			"path": "pages/proper/cleaning",
+			"style": {
+				"navigationBarTitleText": "保洁预约",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/index/parkingPackage",
+			"style": {
+				"navigationBarTitleText": "停车场包月",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/controlableDoorList/controlableDoorList",
+			"style": {
+				"navigationBarTitleText": "选择开门方式",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/randomPassword/randomPassword",
+			"style": {
+				"navigationBarTitleText": "随机密码开门",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/unlock/unlock",
+			"style": {
+				"navigationBarTitleText": "一键开门",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/index/getaway/getaway",
+			"style": {
+				"navigationBarTitleText": "预离场",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/faceInfonInput/faceInfonInput",
+			"style": {
+				"navigationBarTitleText": "人脸信息录入",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/ownerInfoInput/ownerInfoInput",
+			"style": {
+				"navigationBarTitleText": "业主信息录入",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/pay/res/fail",
+			"style": {
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/pay/payArray",
+			"style": {
+				"navigationBarTitleText": "缴费记录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+				// ,
+				// "usingComponents": {
+				// 	"van-empty": "/wxcomponents/vant/empty/index",
+				// 	"van-image": "/wxcomponents/vant/image/index"
+				// }
+			}
+		}, {
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "支付订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/controlableDoorList/door",
+			"style": {
+				"navigationBarTitleText": "访客预约开门",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/controlableDoorList/offlog",
+			"style": {
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/ownerInfoInput/communitySelection/communitySelection",
+			"style": {
+				"navigationBarTitleText": "小区选择",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/userInfo/Property",
+			"style": {
+				"navigationBarTitleText": "物业缴费",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+				// ,
+				// "usingComponents": {
+				// 	"van-dialog": "/wxcomponents/vant/dialog/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/userInfo/userInfo",
+			"style": {
+				"navigationBarTitleText": "门禁列表",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/userInfo/stoppay",
+			"style": {
+				"navigationBarTitleText": "停车缴费",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/register/wxlogin",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/index/ves-com-out/ves-com-out",
+			"style": {
+				"navigationBarTitleText": "扫码支付",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/ownerInfoInput/unit/unit",
+			"style": {
+				"navigationBarTitleText": "楼层选择",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/index/spareVehicles",
+			"style": {
+				"navigationBarTitleText": "小区空余车位显示",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/districtNotice",
+			"style": {
+				"navigationBarTitleText": "小区通知",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+				// ,
+				// "usingComponents": {
+				// 	"van-empty": "/wxcomponents/vant/empty/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/districtNotice_son",
+			"style": {
+				"navigationBarTitleText": "小区通知",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}, {
+			"path": "pages/proper/myAudit",
+			"style": {
+				"navigationBarTitleText": "我的审核",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+				// ,
+				// "usingComponents": {
+				// 	"van-empty": "/wxcomponents/vant/empty/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/coupon",
+			"style": {
+				"navigationBarTitleText": "领取优惠券"
+				// ,
+				// "usingComponents": {
+				// 	"van-empty": "/wxcomponents/vant/empty/index"
+				// }
+			}
+		}, {
+			"path": "pages/proper/parkingPackage",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "停车场包月",
+				"navigationBarTextStyle": "black",
+				"backgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [{
+				"path": "home/home-nextPage/invoice-rise",
+				"style": {
+					"navigationBarTitleText": "发票抬头",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "home/home-nextPage/invoice-set",
+				"style": {
+					"navigationBarTitleText": "发票设置",
+					"backgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "home/home-nextPage/invoice-platform",
+				"style": {
+					"navigationBarTitleText": "平台消费开票",
+					"backgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "home/home-nextPage/invoice",
+				"style": {
+					"navigationBarTitleText": "发票",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "home/home-nextPage/news",
+				"style": {
+					"navigationBarTitleText": "新闻",
+					"backgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "home/edit",
+				"style": {
+					"backgroundColor": "#FFFFFF",
+					"navigationBarTitleText": "常用添加",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+			}
+		]
+	}, {
+		"root": "pagesB",
+		"pages": [{
+				"path": "user/msg/msg",
+				"style": {
+					"navigationBarTitleText": "我的消息",
+					"enablePullDownRefresh": true,
+					"backgroundTextStyle": "dark",
+					"app-plus": {
+						"titleView": false
+					}
+				}
+			}, {
+				"path": "user/myMonth/myMonth",
+				"style": {
+					"navigationBarTitleText": "我的包月",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/myMonth/mycmcc",
+				"style": {
+					"navigationBarTitleText": "我的包月",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, 
+			{
+				"path": "user/coupons/coupons",
+				"style": {
+					"navigationBarTitleText": "我的优惠券",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-empty": "/wxcomponents/vant/empty/index"
+					// }
+				}
+			}, {
+				"path": "user/info/userName",
+				"style": {
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/info/balance",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/info/withdrawal",
+				"style": {
+					"navigationBarTitleText": "余额提现",
+					"navigationBarBackgroundColor": "#EFEDEF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-field": "/wxcomponents/vant/field/index"
+					// }
+				}
+			}, {
+				"path": "user/info/price1",
+				"style": {
+					"navigationBarTitleText": "我的余额",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/info/price",
+				"style": {
+					"navigationBarTitleText": "我的余额",
+					"navigationBarBackgroundColor": "#F8F7F8",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-divider": "/wxcomponents/vant/divider/index",
+					// 	"van-cell": "/wxcomponents/vant/cell/index",
+					// 	"van-field": "/wxcomponents/vant/field/index"
+					// }
+				}
+			}, {
+				"path": "user/info/proper",
+				"style": {
+					"navigationBarTitleText": "我的物业",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/automatic/automatic",
+				"style": {
+					"navigationBarTitleText": "自动扣费",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/info/vehicleBinding/vehicleBinding",
+				"style": {
+					"navigationBarTitleText": "车牌绑定",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/userService/serviceList",
+				"style": {
+					"navigationBarTitleText": "服务开通",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-empty": "/wxcomponents/vant/empty/index"
+					// }
+				}
+			}, {
+				"path": "user/info/vehicleBinding/cardList",
+				"style": {
+					"navigationBarTitleText": "车牌管理",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/info/addList/addList",
+				"style": {
+					"navigationBarTitleText": "地址管理",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-empty": "/wxcomponents/vant/empty/index"
+					// }
+				}
+			}, {
+				"path": "user/info/addList/address",
+				"style": {
+					"navigationBarTitleText": "添加地址",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/settings/settings",
+				"style": {
+					"navigationBarTitleText": "设置",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/myServices",
+				"style": {
+					"navigationBarTitleText": "我的服务",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+					// ,
+					// "usingComponents": {
+					// 	"van-empty": "/wxcomponents/vant/empty/index"
+					// }
+				}
+			}, {
+				"path": "user/problem",
+				"style": {
+					"navigationBarTitleText": "问题反馈",
+					"enablePullDownRefresh": true,
+					"backgroundTextStyle": "dark",
+					"app-plus": {
+						"titleView": false
+					}
+				}
+			}, {
+				"path": "user/problemDetailed",
+				"style": {
+					"navigationBarTitleText": "常见问题",
+					"enablePullDownRefresh": true,
+					"backgroundTextStyle": "dark",
+					"app-plus": {
+						"titleView": false
+					}
+				}
+			},
+			{
+				"path": "user/openingRecord",
+				"style": {
+					"navigationBarTitleText": "开门记录",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/myInfo",
+				"style": {
+					"navigationBarTitleText": "我的信息",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/phone",
+				"style": {
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTitleText": "手机号",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/updateName",
+				"style": {
+					"navigationBarTitleText": "修改昵称",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}, {
+				"path": "user/servicesDetails",
+				"style": {
+					"navigationBarTitleText": "服务详情",
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"backgroundColor": "#FFFFFF"
+				}
+			}
+		]
+	}],
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+		}
+	},
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F1F1F1",
+		"navigationBarTextStyle": "black"
+	}
+}

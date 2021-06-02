@@ -1,0 +1,7 @@
+<view class='info-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from='../wxs/utils.sjs' name='utils'>
+  </import-sjs>
+  <view a:if="{{ info !== null && info !== '' || dot }}" class="van-info {{ utils.bem('info', { dot }) }} {{customClass}}" style='{{ customStyle }}'>
+    {{ dot ? '' : info }}
+  </view>
+</view>

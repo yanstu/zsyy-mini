@@ -1,0 +1,8 @@
+<view class='grid-index {{className}}' style='{{style}}' ref='saveChildRef0'>
+  <import-sjs from='./index.sjs' name='computed'>
+  </import-sjs>
+  <view class="van-grid {{customClass}} {{ border && !gutter ? 'van-hairline--top' : '' }}" style='{{ computed.rootStyle({ gutter }) }}'>
+    <slot>
+    </slot>
+  </view>
+</view>
